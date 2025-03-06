@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     color: #ffffff;
@@ -61,9 +61,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('https://cdn.prod.website-files.com/655f1188cf5e283d9d642d99/65ba5ebf6624166ae66b62fa_HERO-IMAGE-BACKGROUND.webp');
-    background-size: cover;
-    background-position: center;
+    background-color: var(--background-light);
     padding: 6rem 2rem;
     text-align: center;
     color: #ffffff;
@@ -94,18 +92,6 @@ nav a:hover {
     background-color: var(--secondary-color);
 }
 
-/* Card Styles */
-.card {
-    background-color: var(--card-background);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
 /* Probetraining Section */
 .probetraining {
     padding: 4rem 2rem;
@@ -140,6 +126,7 @@ nav a:hover {
 .probetraining-content a:hover {
     color: var(--secondary-color);
 }
+
 /* Courses Section */
 .courses {
     padding: 4rem 2rem;
@@ -150,6 +137,7 @@ nav a:hover {
 .courses h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    color: #ffffff;
 }
 
 .courses-intro {
@@ -203,36 +191,11 @@ nav a:hover {
     margin-bottom: 1rem;
 }
 
-.toggle-button {
-    background-color: var(--primary-color);
-    color: #ffffff;
-    padding: 0.5rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.toggle-button:hover {
-    background-color: var(--secondary-color);
-}
-
 .course-details {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease, font-size 0.5s ease, padding 0.5s ease;
-    font-size: 0; 
-    padding: 0 1rem; /* Add padding when expanded */
+    font-size: 1rem;
     color: var(--text-dark);
+    padding: 1rem 0;
 }
-
-.course-details.active {
-    max-height: 500px; /* Adjust based on content */
-    font-size: 1rem; /* Show text when expanded */
-    padding: 1rem; /* Add padding when expanded */
-}
-
 
 /* About Section */
 .about {
@@ -244,40 +207,19 @@ nav a:hover {
 .about h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    color: #ffffff;
 }
 
 .about-content {
     max-width: 800px;
     margin: 0 auto;
+    text-align: left;
+    color: var(--text-dark);
 }
 
 .about-content p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: var(--text-dark);
-}
-
-/* Partners Section */
-.partners {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: var(--card-background);
-}
-
-.partners h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.partner-logos {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.partner-logos img {
-    height: 50px;
 }
 
 /* Footer */
@@ -338,160 +280,4 @@ footer .social-links a:hover {
     .about-content p {
         font-size: 1rem;
     }
-}
-
-/* Events Section */
-.events {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: var(--background-light);
-}
-
-.events h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.event-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.event-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.event-card h3 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-}
-
-.event-card p {
-    padding: 0 1rem;
-    color: var(--text-dark);
-}
-
-/* Preise Section */
-.pricing {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: var(--background-light);
-}
-
-.pricing h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #ffffff;
-}
-
-.pricing-intro {
-    max-width: 800px;
-    margin: 0 auto 2rem auto;
-    text-align: left;
-    color: var(--text-dark);
-}
-
-.pricing-table {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.pricing-card {
-    background-color: #1a1a1a; /* Darker background */
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow */
-    transition: transform 0.3s ease;
-    border: 1px solid #333; /* Subtle border */
-}
-
-.pricing-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
-}
-
-.pricing-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-}
-
-.pricing-card .price {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.pricing-card ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 2rem;
-}
-
-.pricing-card ul li {
-    margin-bottom: 0.5rem;
-    color: var(--text-dark);
-}
-
-.pricing-card .button {
-    background-color: var(--primary-color);
-    color: #ffffff;
-    padding: 0.8rem 2rem;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.pricing-card .button:hover {
-    background-color: var(--secondary-color);
-}
-
-.flexible-offers {
-    margin-top: 4rem;
-}
-
-.flexible-offers h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #ffffff;
-}
-
-.pricing-note {
-    max-width: 800px;
-    margin: 2rem auto 0 auto;
-    text-align: left;
-    color: var(--text-dark);
-    font-size: 0.9rem;
-}
-
-/* Das Gym Section */
-.gym-facilities {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: var(--background-light);
-}
-
-.gym-facilities h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #ffffff;
-}
-
-.gym-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.gym-content p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    color: var(--text-dark);
 }
