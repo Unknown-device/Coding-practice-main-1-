@@ -1,28 +1,17 @@
 /* General Styles */
-:root {
-    --primary-color: #f14553;
-    --secondary-color: #19477e;
-    --background-dark: #121212;
-    --background-light: #1f1f1f;
-    --card-background: #2d2d2d;
-    --text-light: #e0e0e0;
-    --text-dark: #b0b0b0;
-}
-
 body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    background: #121212;
+    color: #e0e0e0;
     line-height: 1.6;
-    color: var(--text-light);
-    background-color: var(--background-dark);
 }
 
 h1, h2, h3 {
-    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #fff;
 }
 
 a {
@@ -37,7 +26,7 @@ img {
 
 /* Header */
 header {
-    background-color: var(--background-light);
+    background: #1f1f1f;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -49,22 +38,17 @@ header .logo img {
 }
 
 nav a {
-    color: var(--text-light);
+    color: #e0e0e0;
     margin: 0 1rem;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: var(--primary-color);
-}
 
 /* Hero Section */
 .hero {
-    background-color: var(--background-light);
+    background: #1f1f1f;
     padding: 6rem 2rem;
     text-align: center;
-    color: #ffffff;
 }
 
 .hero h1 {
@@ -80,36 +64,31 @@ nav a:hover {
 /* Button Styles */
 .button {
     display: inline-block;
-    background-color: var(--primary-color);
-    color: #ffffff;
+    background: #f14553;
+    color: #fff;
     padding: 0.8rem 2rem;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
 }
 
-.button:hover {
-    background-color: var(--secondary-color);
-}
 
 /* Probetraining Section */
 .probetraining {
     padding: 4rem 2rem;
     text-align: center;
-    background-color: var(--background-light);
+    background: #1f1f1f;
 }
 
 .probetraining h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #ffffff;
 }
 
 .probetraining-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
-    color: var(--text-dark);
+    color: #b0b0b0;
 }
 
 .probetraining-content p {
@@ -118,33 +97,27 @@ nav a:hover {
 }
 
 .probetraining-content a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #f14553;
 }
 
-.probetraining-content a:hover {
-    color: var(--secondary-color);
-}
 
 /* Courses Section */
 .courses {
     padding: 4rem 2rem;
     text-align: center;
-    background-color: var(--background-light);
+    background: #1f1f1f;
 }
 
 .courses h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #ffffff;
 }
 
 .courses-intro {
     max-width: 800px;
     margin: 0 auto 2rem auto;
     text-align: left;
-    color: var(--text-dark);
+    color: #b0b0b0;
 }
 
 .courses-intro p {
@@ -159,18 +132,12 @@ nav a:hover {
 }
 
 .course-card {
-    background-color: var(--card-background);
+    background: #2d2d2d;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    transition: transform 0.3s ease;
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
-.course-card:hover {
-    transform: translateY(-10px);
-}
 
 .course-card img {
     width: 100%;
@@ -182,39 +149,31 @@ nav a:hover {
 .course-card h3 {
     font-size: 1.5rem;
     margin: 1rem 0;
-    color: #ffffff;
 }
 
 .course-card p {
     font-size: 1rem;
-    color: var(--text-dark);
+    color: #b0b0b0;
     margin-bottom: 1rem;
-}
-
-.course-details {
-    font-size: 1rem;
-    color: var(--text-dark);
-    padding: 1rem 0;
 }
 
 /* About Section */
 .about {
     padding: 4rem 2rem;
     text-align: center;
-    background-color: var(--background-light);
+    background: #1f1f1f;
 }
 
 .about h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #ffffff;
 }
 
 .about-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
-    color: var(--text-dark);
+    color: #b0b0b0;
 }
 
 .about-content p {
@@ -224,8 +183,8 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: var(--background-light);
-    color: var(--text-light);
+    background: #1f1f1f;
+    color: #e0e0e0;
     padding: 2rem;
     text-align: center;
 }
@@ -237,7 +196,7 @@ footer .footer-content {
 
 footer p {
     margin: 0.5rem 0;
-    color: var(--text-dark);
+    color: #b0b0b0;
 }
 
 footer .social-links {
@@ -245,14 +204,11 @@ footer .social-links {
 }
 
 footer .social-links a {
-    color: var(--text-light);
+    color: #e0e0e0;
     margin: 0 1rem;
-    transition: color 0.3s ease;
 }
 
-footer .social-links a:hover {
-    color: var(--primary-color);
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
